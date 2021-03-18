@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula04</title>
+    <title>Aula 06</title>
     <style>
         body{
             background-color: rgb(85, 85, 85);
@@ -18,11 +18,11 @@
     <h1>Olá, Mundo!!!</h1>
     <p>Testando Javascript</p>
     <script>
-        window.alert('minha primeira aplicação web')
-        window.confirm('Está gostando de javascript?')
-        window.prompt('Qual é o seu nome?')
-        var nome = window.prompt('Qual é o seu nome?')
-         window.alert('É um grande prazer em te conhecer, ' + nome + '!' ) //concatenação
+        var n1 = Number.parseInt (window.prompt('Digite um valor: '))//quando utilizado o prompt retorna o valor string
+        var n2 = Number.parseInt (window.prompt('Digite outro Valor: '))
+        var s = n1 + n2
+        window.alert('A soma dos valores é: ' + s)// se colocar apenas um + vai concatenar
+
     </script>
 </body>
 </html>
