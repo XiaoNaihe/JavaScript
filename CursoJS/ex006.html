@@ -22,12 +22,18 @@
         interaja...
     </div>
     <script>
-        function clicar(){
+        function clicar()
             var a = window.document.getElementById('Area')
             function clicar(){
                 a.innerText = 'Clicou!'
+                a.style.background = 'red'
             }
-        }
+            function entrar(){
+                a.innerText = 'Entrou!'
+            }
+            function sair(){
+                a.innerText = 'Saiu!'
+            }
     </script>
 </body>
 </html>
