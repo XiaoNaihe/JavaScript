@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1> Sistema de nacionalidade</h1>
+    Informe a nacionalidade <input type="text" name="txtNacionalidade" id = "txtNacionalidade" >
+    <input type="button" value="Verificar" onclick="verificarNacionalidade()">
+    <div id="res"> 
+
+    </div>
+
+    <script>
+        function verificarNacionalidade() {
+            var nacionalidade = document.querySelector('input#txtNacionalidade').value
+            var res = document.getElementById('res')
+            if (nacionalidade != 'Brasil') {
+                res.innerHTML = `Você <strong> NÃO </strong> é brasileiro, e sim um ${nacionalidade} ` 
+            } else {
+                res.innerHTML = `Você é <strong> SIM </strong> um Brasileiro!`
+            }
+
+        }
+    </script>
+</body>
+</html>
